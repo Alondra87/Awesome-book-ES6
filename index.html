@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Awesome Books List</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Awesome Books</a>
+      <nav class="user-nav">
+        <a class="user-nav__link" href="#books">List</a>
+        <a class="user-nav__link" href="#add-new">Add new</a>
+        <a class="user-nav__link" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="main-date-box" class="date-box"></div>
+      <section id="books" class="section books">
+        <h2 class="title">All awesome books</h2>
+      </section>
+      <section id="add-new" class="section add-new is-hidden">
+        <h2 class="title">Add a new book</h2>
+        <form id="add-book-form" action="#" class="add-book-form">
+          <input
+            id="title"
+            type="text"
+            name="title"
+            placeholder="Enter the book's title"
+            aria-label="title"
+            class="input"
+          />
+          <input
+            id="author"
+            type="text"
+            name="author"
+            placeholder="Enter the book's author"
+            aria-label="author"
+            class="input"
+          />
+          <button type="submit" class="btn">Add</button>
+        </form>
+      </section>
+      <section id="contact" class="section contact is-hidden">
+        <h1 class="title">Contact information</h1>
+        <div>
+          <p>Do you have any questions or you just want to say "Hello"?</p>
+          <p>You can reach out to us!</p>
+          <ul class="contact-list">
+            <li><strong>Our e-mail:</strong> mail@mail.com</li>
+            <li><strong>Our phone number:</strong> 00435866534422</li>
+            <li>
+              <strong>Our address:</strong> Streetname 22, 84503 City, Country
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">
+        &copy; 2022 Awesome Books. All Rights Reserved.
+      </p>
+    </footer>
+    <script type="module" src="modules/index.js"></script>
+  </body>
+</html>
