@@ -1,5 +1,5 @@
 import createNodeElem from '../utils/createElem.utils.js';
-import assignDate from '../utils/date.utils.js';
+import { luxon } from '../luxon/luxon.js';
 
 const MAIN_DATE_ID = 'main-date';
 
@@ -12,7 +12,7 @@ export default class MainDateView {
     return createNodeElem({
       tag: 'p',
       id: this.id,
-      text: assignDate(),
+      text: luxon.DateTime.now().toJSDate(),
     });
   }
 
