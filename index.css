@@ -1,0 +1,270 @@
+/* Variables */
+:root {
+  /* Color Palette */
+  --color-primary: #1db954;
+  --color-error: #dc3545;
+  --color-grey-dark-1: #58585a;
+  --color-grey-dark-2: #333;
+  --color-grey-dark-3: #272a32;
+  --color-grey-light-1: #f4f4f4;
+  --color-grey-light-2: #cfd8dc;
+  --color-grey-light-3: #b3bac5;
+
+  /* Other Color Variables */
+  --color-text: --color-grey-dark-2;
+
+  /* Header */
+  --header-height: 7rem;
+}
+
+/* Resetting */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1.6rem;
+  color: var(--color-text);
+  font-family: 'Radio Canada', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Main Content Component  */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - (2 * var(--header-height)));
+  padding: 0 2rem 8rem;
+}
+
+/* Header Component */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-grey-dark-3);
+  color: #fff;
+  height: var(--header-height);
+  padding: 0 4rem;
+}
+
+/* Logo Component */
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* User Navigation Component */
+
+.user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.user-nav > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.user-nav__link {
+  padding: 2.4rem 0.5rem 2.1rem;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+}
+
+.user-nav__link--active,
+.user-nav__link:hover {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* Main Date Box Component */
+
+.date-box {
+  width: 100%;
+  text-align: end;
+  font-size: 1.2rem;
+  padding: 1.5rem 0;
+  margin-bottom: 3.5rem;
+}
+
+/* Title Component  */
+
+.title {
+  align-self: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Section Component */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section .title {
+  margin-bottom: 3rem;
+}
+
+/* Books Section Component  */
+
+.books {
+  width: 100%;
+}
+
+/* Books List Component  */
+
+.books-list li:nth-child(odd) {
+  background-color: var(--color-grey-dark-1);
+  color: #fff;
+}
+
+.books-list li:nth-child(even) {
+  background-color: var(--color-grey-light-1);
+}
+
+/* Book Component */
+
+.book {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.book-info h3 {
+  margin-right: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+/* Button Component */
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn--remove {
+  background-color: var(--color-error);
+  color: #fff;
+}
+
+/* Input Component */
+
+.input {
+  width: 100%;
+  height: 4.8rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: var(--color-text);
+  background-color: #fff;
+  border: 1px solid var(--color-grey-light-2);
+  border-radius: 0.8rem;
+  padding: 1.5rem 3.8rem 1.5rem 1.6rem;
+}
+
+.input::-webkit-input-placeholder,
+.input::placeholder {
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-grey-light-3);
+}
+
+.input:focus {
+  outline-color: var(--color-primary);
+}
+
+/* Add-New Section Component */
+
+.add-new {
+  align-items: center;
+}
+
+/* Add-Book Form Component */
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-book-form .btn {
+  align-self: flex-end;
+}
+
+.add-book-form > *:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+/* Footer Component */
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 0 4rem;
+  height: var(--header-height);
+  background-color: var(--color-grey-dark-3);
+  color: #fff;
+}
+
+/* Utilities Classes */
+
+.is-hidden {
+  display: none;
+}
+
+/* Contact Section */
+.contact {
+  align-items: center;
+}
+
+.contact p:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.contact-list {
+  padding: 2rem 2.5rem;
+  list-style-type: disc;
+}
