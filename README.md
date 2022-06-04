@@ -2,7 +2,7 @@
 
 # Awesome Books ES6
 
-> In this project, I will restructure Awesome books app code. The goal is to make it more organized by using modules.
+> In this project, In this project I built Awesome books app code. The goal was to make it more organized by using modules.
 
 ## Built With
 
